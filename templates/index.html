@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Data Collector App</title>
+  <head>
+    <link href="../static/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <h3>Welcome to fill in the entries to get the average statistics of BMI!</h3>
+      <form action="{{url_for('success')}}" method="post">
+        <input title="You email will be safe with us" placeholder="Enter your email address here" type="email" name="email_name" required> <br>
+        
+        <input title="You height data will be safe with us" placeholder="Enter your height in cm" type="number" min="50", max="300" name="height_name" required> <br>
+        
+        <input title="You weight data will be safe with us" placeholder="Enter your weight in kg" type="number" min="30", max="200" name="weight_name" required> <br>
+
+        <button type="submit"> Submit </button>
+      </form>
+    </div>
+  </body>
+</html>
